@@ -13,13 +13,31 @@ import java.util.Scanner;
         Scanner sc = new Scanner(System.in);
 
         ArrayList <String> ciudades = new ArrayList<String>();
- System.out.println("Ingresar ranking ciudad favorita : ");
-        for (int i = 0; i < 3; i++) {
-           
 
-            System.out.println("#"+(i+1));
-            String city = sc.nextLine();
-            ciudades.add(city);
+        int bandera = 1,i=1;
+
+        while (bandera!=0) {
+            
+
+            System.out.println("Ingresar  ciudad favorita : ");
+
+            
+               
+    
+                System.out.println("#"+(i));
+                String city = sc.nextLine();
+                ciudades.add(city);
+                i++;
+    
+            
+            System.out.println("Presione 0 para finalizar o enter para ingresar una nueva ciudad");
+            try {
+                bandera = Integer.parseInt(sc.nextLine());
+
+            } catch (Exception e) {
+                continue;
+            }
+    
 
         }
 

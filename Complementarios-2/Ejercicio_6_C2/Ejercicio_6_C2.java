@@ -1,4 +1,3 @@
-package Ejercicio_6;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -58,6 +57,11 @@ public class Ejercicio_6_C2 {
     
     }
 
+
+
+
+
+    
 
 
 

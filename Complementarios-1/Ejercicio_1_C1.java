@@ -17,6 +17,9 @@ public class Ejercicio_1_C1 {
         System.out.println("Ingresar nombre del usuario  : ");
         String nombre = scan.nextLine();
         
+        
         System.out.println("HOLA "+ nombre +" !!!");
     }
+
+
 }

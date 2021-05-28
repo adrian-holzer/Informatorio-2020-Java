@@ -21,27 +21,28 @@ public class Ejercicio_8_C1 {
         Scanner scan = new Scanner(System.in);
 
 
-        System.out.println("Ingresar Nombre y Apellido : ");
-        String nombAp = scan.nextLine();
+        System.out.println("Ingresar Nombre  : ");
+        String nombre = scan.nextLine();
 
+        
 
+        System.out.println("Ingresar Apellido  : ");
+        String apellido = scan.nextLine();
 
         System.out.println("Ingresar Edad : ");
         int edad = scan.nextInt();
 
         scan.nextLine();
-
         System.out.println("Ingresar Dirección : ");
         String dir = scan.nextLine();
-
-
         System.out.println("Ingresar Ciudad : ");
         String ciudad = scan.nextLine();
 
 
+        Persona p = new Persona(nombre,apellido,edad,dir,ciudad);
 
-        System.out.println(ciudad + " - "+dir +" - "+edad+" - "+ nombAp +" - ");
-
+        System.out.println(p.toString()); 
+      
 
 
 
