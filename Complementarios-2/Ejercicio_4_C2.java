@@ -30,6 +30,7 @@ public class Ejercicio_4_C2 {
         System.out.println("Curso A : "+ cursoA);
         System.out.println("Curso B : "+ cursoB);
         System.out.println("Curso C : "+ cursoC);
+        sc.close();
 
     }
 }

@@ -41,5 +41,7 @@ public class Ejercicio_5_C2 {
         System.out.println("Total : "+ totalPagar);
 
         System.out.println("Totales por dia : "+ totales);
+        sc.close();
+
     }
 }

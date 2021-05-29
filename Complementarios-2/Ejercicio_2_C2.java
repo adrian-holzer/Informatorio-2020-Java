@@ -46,6 +46,7 @@ public class Ejercicio_2_C2 {
 
 
         imprimirLista(listaNumeros);
+        sc.close();
 
 
     }

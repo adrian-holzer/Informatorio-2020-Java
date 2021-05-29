@@ -45,6 +45,7 @@ public class Ejercicio_8_C1 {
       
 
 
+        scan.close();
 
 
 

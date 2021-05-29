@@ -14,29 +14,28 @@ public class Ejercicio_4_C1 {
         Scanner scan = new Scanner(System.in);
 
 
-       
-        
+
         System.out.println("Ingresar número : ");
 
         int num = scan.nextInt();
 
-        int factorial = Factorial(num);
+        int factorial = getFactorial(num);
 
-        System.out.println( "El factorial de " + num + " es : "+ factorial);
+        System.out.println("El factorial de " + num + " es : " + factorial);
+        scan.close();
 
     }
 
+    public static int getFactorial(int num) {
 
-    public static int Factorial(int num){
+        if (num == 0 || num == 1) {
 
-
-        int factorial = 1;
-
-        for (int i = 1; i < num; i++) {
-            
-
-            factorial =  num  * Factorial(num-1);
+            return 1;
         }
-        return factorial;
+
+        else {
+            return num * getFactorial(num - 1);
+        }
+
     }
 }

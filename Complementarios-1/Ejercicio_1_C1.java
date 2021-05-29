@@ -19,6 +19,8 @@ public class Ejercicio_1_C1 {
         
         
         System.out.println("HOLA "+ nombre +" !!!");
+
+        scan.close();
     }
 
 

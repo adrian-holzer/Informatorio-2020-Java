@@ -53,6 +53,7 @@ public class Ejercicio_6_C2 {
         System.out.println("Empleado- Sueldo : "+ empleadosData);
         System.out.println("\n\n***************************************************\n\n");
 
+        sc.close();
 
     
     }

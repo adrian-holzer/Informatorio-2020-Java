@@ -29,6 +29,7 @@ public class Ejercicio_3_C2 {
         imprimirOrdenInverso(numeracionCartas);
 
         getDesordenar(numeracionCartas);
+        sc.close();
 
     }
 

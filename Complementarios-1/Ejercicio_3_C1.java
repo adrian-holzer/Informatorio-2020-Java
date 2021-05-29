@@ -16,6 +16,7 @@ System.out.println("Ingresar número : ");
 int num = scan.nextInt();
 
 Secuencia(num);
+scan.close();
 
 
     }

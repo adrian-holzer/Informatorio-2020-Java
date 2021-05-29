@@ -31,6 +31,7 @@ public class Ejercicio_5_C1 {
 
 
         System.out.println( a+" x "+ b +" = " + suma );
+        scan.close();
 
     }
 }

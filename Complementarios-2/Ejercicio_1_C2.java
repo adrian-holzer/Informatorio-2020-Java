@@ -44,7 +44,8 @@ import java.util.Scanner;
         getRanking(ciudades);
         
        
-        
+        sc.close();
+
 
     }
 

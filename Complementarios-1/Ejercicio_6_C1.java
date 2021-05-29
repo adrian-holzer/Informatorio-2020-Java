@@ -29,6 +29,7 @@ public class Ejercicio_6_C1 {
             potencia= potencia*a;
         }
         System.out.println("Potencia : " + potencia );
+        scan.close();
 
     }
 }

@@ -39,6 +39,9 @@ public class Ejercicio_7_C2 {
           System.out.println(Arrays.toString(arr));
 
         }
+
+        sc.close();
+
     }
 
 
