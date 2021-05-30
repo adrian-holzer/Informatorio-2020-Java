@@ -20,6 +20,7 @@ public class Ejercicio_5_C2 {
 
         int totalPagar = 0;
         Integer [ ] h = {6,7,8,4,5};
+        
         horas_trab= Arrays.asList(h);
 
         Integer [ ] v = {350, 345, 550, 600, 320};

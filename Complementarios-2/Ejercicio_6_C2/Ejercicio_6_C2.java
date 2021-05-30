@@ -24,10 +24,10 @@ public class Ejercicio_6_C2 {
         HashSet<Empleado> listaEmpleados = new HashSet<Empleado>();
         Map<String, String> empleadosData = new HashMap<String, String>();
 
-        Empleado e1 = new Empleado("Juan Perez","34343434",50,500);
-        Empleado e2 = new Empleado("Adrian Gonzalez","35353535",43,300);
-        Empleado e3 = new Empleado("Laura Gomez","363633636",40,400);
-        Empleado e4 = new Empleado("Carolina Lopez","373777777",45,630);
+        Empleado e1 = new Empleado("Juan Perez", "45321123", 45, 500.50);
+        Empleado e2 = new Empleado("Adrian Gonzalez","54678876",43,300);
+        Empleado e3 = new Empleado("Laura Gomez","36363363",40,400);
+        Empleado e4 = new Empleado("Carolina Lopez","37377777",45,630);
 
         listaEmpleados.add(e1);
         listaEmpleados.add(e2);
@@ -35,10 +35,10 @@ public class Ejercicio_6_C2 {
         listaEmpleados.add(e4);
 
 
-        empleadosData.put(e1.dni, " $"+e1.getTotalPagar());
-        empleadosData.put(e2.dni, " $"+e2.getTotalPagar());
-        empleadosData.put(e3.dni, " $"+e3.getTotalPagar());
-        empleadosData.put(e4.dni, " $"+e4.getTotalPagar());
+        empleadosData.put(e1.getDni(), " $"+e1.getTotalPagar());
+        empleadosData.put(e2.getDni(), " $"+e2.getTotalPagar());
+        empleadosData.put(e3.getDni(), " $"+e3.getTotalPagar());
+        empleadosData.put(e4.getDni(), " $"+e4.getTotalPagar());
         System.out.println("\n\n***************************************************\n\n");
 
 
@@ -50,7 +50,7 @@ public class Ejercicio_6_C2 {
 
         System.out.println("\n\n***************************************************\n\n");
 
-        System.out.println("Empleado- Sueldo : "+ empleadosData);
+        System.out.println("Empleado (DNI)- Sueldo : "+ empleadosData);
         System.out.println("\n\n***************************************************\n\n");
 
         sc.close();

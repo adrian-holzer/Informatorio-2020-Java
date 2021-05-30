@@ -3,12 +3,12 @@
 public class Empleado {
 
 
-    public String nombreApellido;
-    public String dni;
-    public Integer horasTrabajadas;
-    public Integer valorHora;
+    private String nombreApellido;
+    private String dni;
+    private int horasTrabajadas;
+    private double valorHora;
 
-    Empleado(String nombap, String dni, Integer horasTrabajadas,Integer valorHora){
+    Empleado(String nombap, String dni, int horasTrabajadas,double valorHora){
 
 this.nombreApellido = nombap;
 this.dni = dni;
@@ -31,6 +31,11 @@ this.valorHora=valorHora;
 
        return this.horasTrabajadas*this.valorHora;
 
+    }
+
+    public String getDni(){
+
+        return this.dni;
     }
     
 }
