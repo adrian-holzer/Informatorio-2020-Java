@@ -18,7 +18,7 @@ public class Ejercicio_3_C2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        ArrayList numeracionCartas = new ArrayList<Integer>();
+        ArrayList<Integer> numeracionCartas = new ArrayList<Integer>();
 
         for (int i = 2; i < 15; i++) {
 

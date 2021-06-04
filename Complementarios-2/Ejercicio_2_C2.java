@@ -19,54 +19,87 @@ public class Ejercicio_2_C2 {
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Ingresar número : ");
-            int num = sc.nextInt();
-            agregarNumero(-1,listaNumeros, num);
+
+            try {
+                int num = sc.nextInt();
+                listaNumeros.add(num);
+            } catch (Exception e) {
+                System.out.println("Ingrese un número correcto");
+                i--;
+                sc.nextLine();
+            }
+           
         }
 
-        System.out.println("Tamaño  antes de agregar al principio : " + listaNumeros.size());
+        System.out.println("\n - Tamaño  antes de agregar al principio : " + listaNumeros.size());
 
-        System.out.println("Ingresar un número para agregar al principio : ");
-        int numAgregar = sc.nextInt();
+        try {
+            System.out.println("\n Ingresar un número para agregar al principio : ");
+            int numAgregarP = sc.nextInt();
+            agregarAlPrincipio(listaNumeros, numAgregarP);
 
-        agregarNumero(0, listaNumeros, numAgregar);
+        } catch (Exception e) {
+            System.out.println("No se ha ingresado un valor correcto");
+            sc.nextLine();
+            sc.close();
+            return;
+        }
+        
 
 
 
-        System.out.println("Tamaño  después de agregar al principio : " + listaNumeros.size());
 
-        System.out.println("Tamaño antes de agregar al final : " + listaNumeros.size());
+        System.out.println("\n- Tamaño  después de agregar al principio : " + listaNumeros.size());
+
+        System.out.println("\n- Tamaño antes de agregar al final : " + listaNumeros.size());
 
 
-        System.out.println("Ingresar un número para agregar al final : ");
-         numAgregar = sc.nextInt();
-        agregarNumero(-1,listaNumeros, numAgregar);
+        try {
+         
+           System.out.println("Ingresar un número para agregar al final : ");
+        int  numAgregarF = sc.nextInt();
 
+         agregarAlFinal(listaNumeros, numAgregarF);
+
+        } catch (Exception e) {
+            System.out.println("No se ha ingresado un valor correcto");
+            sc.nextLine();
+            sc.close();
+            return;
+        }
+        
 
         System.out.println("Tamaño  después de agregar al final : " + listaNumeros.size());
 
 
         imprimirLista(listaNumeros);
+
+
         sc.close();
 
 
     }
 
 
-    public static ArrayList<Integer> agregarNumero(int index ,ArrayList<Integer> listaNumeros, int num ) {
+    public static ArrayList<Integer> agregarAlPrincipio(ArrayList<Integer> listaNumeros, int num ) {
         
 
-        if (index!= -1) {
-            
-            listaNumeros.add(index,num);
 
-        }else{
+      
+        listaNumeros.add(0,num);
 
-            listaNumeros.add(num);
-        }
 
         return listaNumeros;
     }
 
+
+    public static ArrayList<Integer> agregarAlFinal(ArrayList<Integer> listaNumeros, int num ) {
+        
+
+        listaNumeros.add(num);
+      
+        return listaNumeros;
+    }
 
 
     public static void imprimirLista(ArrayList<Integer>listaNumeros) {

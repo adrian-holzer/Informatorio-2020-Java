@@ -30,7 +30,7 @@ public class Ejercicio_7_C2 {
         int num2 = sc.nextInt();
 
         if (num1>=num2) {
-            System.out.println("El primer número debe ser mayor  al segundo");
+            System.out.println("El primer número debe ser menor  al segundo");
         }else{
 
 

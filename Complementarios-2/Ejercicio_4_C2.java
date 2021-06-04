@@ -12,15 +12,17 @@ public class Ejercicio_4_C2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        int num=12;
         ArrayList<String> listadoalumnos = new ArrayList<String>();
 
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < num; i++) {
             System.out.println("Ingresar nombre Alumno");
             String nom = sc.nextLine();
             
             listadoalumnos.add(nom);
 
         }
+        
 
 
         List<String> cursoA =  listadoalumnos.subList(0, 4);
@@ -30,6 +32,8 @@ public class Ejercicio_4_C2 {
         System.out.println("Curso A : "+ cursoA);
         System.out.println("Curso B : "+ cursoB);
         System.out.println("Curso C : "+ cursoC);
+
+
         sc.close();
 
     }
