@@ -1,4 +1,4 @@
-package Ejercicios_Repaso;
+package Ejercicios_Repaso.Ejercicios_1_2_3_4;
 public class Empleado {
     
 

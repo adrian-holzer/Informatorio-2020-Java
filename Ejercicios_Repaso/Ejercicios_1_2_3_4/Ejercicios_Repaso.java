@@ -1,4 +1,4 @@
-package Ejercicios_Repaso;
+package Ejercicios_Repaso.Ejercicios_1_2_3_4;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,53 +9,92 @@ import java.util.Scanner;
 
 public class Ejercicios_Repaso {
 
+
+    // En este archivo se encuentran los ejercicios  1,2,3,4
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int bandera = 0;
+       
+        int op = 0;
 
+        
         do {
+            
 
-            System.out.println("Menu");
+            System.out.println("***************************************************************\n\n");
+
+            System.out.println("Menú\n");
             System.out.println("1-Suma de dos números");
             System.out.println("2-Factorial de un número");
             System.out.println("3-Leer un archivo con el listado de alumnos");
             System.out.println("4-Escribir y extraer de un archivo el listado de empleados");
             System.out.println("5-Salir");
+            System.out.println("\n\n***************************************************************\n\n");
 
+         
             try {
-                int op = sc.nextInt();
-                if (op < 1 || op > 5) {
-                    System.out.println("No se ha ingresado una opcion correcta");
 
-                } else {
-
+                op = sc.nextInt();
+              
+            } catch (Exception e) {
+              sc.nextLine();
+            }
+            
+           
                     switch (op) {
                         case 1:
 
                             /*
                              * Crear una función que realice la suma de 2 números dados.
                              */
+                       
+                           
+                             try {
+                                System.out.println("Ingrese el primer número : ");
 
-                            System.out.println("Ingrese el primer número : ");
+                               
+                                int a = sc.nextInt();
+ 
+                                
+                                 System.out.println("Ingrese el segundo número : ");
+                                int b = sc.nextInt();
+ 
+                                
+                               
+                              System.out.println(a + " + " + b + " = " + getSuma(a, b));
 
-                            int a = sc.nextInt();
-                            System.out.println("Ingrese el segundo número : ");
-                            int b = sc.nextInt();
 
-                            System.out.println(a + " + " + b + " = " + getSuma(a, b));
-
-                            break;
+                             } catch (Exception e) {
+                                 System.out.println("\n Los datos ingresados no son correctos");
+                                sc.nextLine();
+                             }
+                               
+                           
+                              
+                           break;
+    
+                               
+                         
+                        
                         case 2:
 
                             /*
                              * Realizar una función que calcule el factorial de un número dado.
                              */
-                            System.out.println("Ingrese un numero : ");
-                            int num = sc.nextInt();
 
-                            System.out.println("!" + num + " = " + getFactorial(num));
 
+                             try {
+                                System.out.println("Ingrese un número : ");
+                                int num = sc.nextInt();
+    
+                                System.out.println("!" + num + " = " + getFactorial(num));
+    
+                             } catch (Exception e) {
+                                System.out.println("\n Los datos ingresados no son correctos");
+                                sc.nextLine();
+                             }
+
+                           
                             break;
                         case 3:
 
@@ -67,7 +106,7 @@ public class Ejercicios_Repaso {
 
                             System.out.println("\n\n***************** Alumnos en la lista  *****************\n\n\n\n");
 
-                            leerLista("Ejercicios_Repaso/files/alumnos.txt");
+                            leerLista("Ejercicios_Repaso/Ejercicios_1_2_3_4/files/alumnos.txt");
                             System.out.println("\n\n\n");
 
                             break;
@@ -78,28 +117,29 @@ public class Ejercicios_Repaso {
                              * empleado.txt.
                              */
 
-                            System.out
-                                    .println("\n\n***************** Empleados en la lista  *****************\n\n\n\n");
-                            escribirArchivo("Ejercicios_Repaso/files/empleados.txt", true);
+                            System.out.println("\n\n***************** Empleados en la lista  *****************\n\n\n\n");
+                            try {
+                                escribirArchivo("Ejercicios_Repaso/Ejercicios_1_2_3_4/files/empleados.txt", true);
+                            } catch (Exception e) {
+                                System.out.println("Ocurrio un error \n\n");
+
+                            }
+                           
                             System.out.println("\n\n\n");
 
                             break;
                         case 5:
-
-                            bandera = 1;
                             break;
+
+                        default:  System.out.println("\n No se ha ingresado una opción correcta.");
+                        break;
 
                     }
 
-                }
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
+            
 
-        } while (bandera == 0);
-
+        } while (op !=5);
         sc.close();
-
     }
 
     private static int getSuma(int a, int b) {
