@@ -1,0 +1,4 @@
+Carlos,Sanchez,05-06-1980,45678.08
+Juan,Gomez,05-06-1980,45678.08
+Carolina,Almendra,05-06-1980,45678.08
+Karen,Zorrilla,05-06-1980,45678.08

@@ -6,8 +6,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Scanner;
 
-
-
 /**
  * 6.	Se dispone de una lista de Empleados, de cada empleado se conoce:
 ○	Nombre y Apellido

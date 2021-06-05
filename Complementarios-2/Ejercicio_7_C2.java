@@ -54,16 +54,16 @@ public class Ejercicio_7_C2 {
         for (int i = a; i < b; i++) {
             
             if (i%3==0 && i%2 ==0) {
-                arr.add("FizzBuzz");
+                arr.add("\""+"FizzBuzz"+"\"");
             }else if (i%3==0) {
-                arr.add("Buzz");
+                arr.add("\""+"Buzz"+"\"");
 
             }
             else if (i%2==0) {
-                arr.add("Fizz");
+                arr.add("\""+"Fizz"+"\"");
 
             }else{
-                arr.add(i+"");
+                arr.add("\""+i+"\"");
 
             }
         }

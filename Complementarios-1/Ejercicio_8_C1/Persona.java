@@ -27,6 +27,6 @@ public class Persona {
  @Override
  public String toString() {
      
-     return this.nombre+" - "+this.apellido+ " - " +this.edad+ " - "+this.direccion + " - " + this.ciudad ;
+     return " Nombre : " + this.nombre+" - Apellido : "+this.apellido+ " - Edad :" +this.edad+ " - Direccion : "+this.direccion + " - Ciudad : " + this.ciudad ;
  }
 }
