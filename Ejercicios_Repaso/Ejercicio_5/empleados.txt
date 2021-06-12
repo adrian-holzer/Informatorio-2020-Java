@@ -1,9 +1,9 @@
 Belen,Lopez,11-09-1994,35678.08
-Carlos,Sanchez,11-04-1994,45678.08
-Juan,Gomez,11-03-1994,45678.08
-Adrian,Lopez,11-09-1994,25678.08
-Adrian,Belmonte,11-09-1994,5678.08
-Belen,Almendra,11-09-1995,65678.08
-Juan,Alvarez,11-09-1994,65678.08
-Carolina,Acevedo,11-09-1994,65678.08
-Leandro,Martinez,11-09-1999,165678.08
+Carlos,Sanchez,23-04-1990,45678.05
+Juan,Gomez,10-03-1984,45678.04
+Adrian,Lopez,05-09-1994,25678.08
+Adrian,Belmonte,10-02-1976,5678.02
+Belen,Almendra,07-04-1999,65678.08
+Juan,Alvarez,16-10-1992,65678.08
+Carolina,Acevedo,22-05-1998,65678.08
+Leandro,Martinez,18-09-1980,165678.08
